@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()"> menu </i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -21,16 +23,25 @@
             </ul>
         </menu>
     </header>
-        <main>
-            <article>
-                <h2>Testando Media Query</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quae suscipit molestiae sunt cupiditate ipsam, libero eaque eligendi dolorum deleniti magnam vero dolores dolore perspiciatis nesciunt, quidem amet ut reiciendis?</p>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quae suscipit molestiae sunt cupiditate ipsam, libero eaque eligendi dolorum deleniti magnam vero dolores dolore perspiciatis nesciunt, quidem amet ut reiciendis?</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deserunt vitae quas iure incidunt nostrum labore distinctio nemo! Mollitia, ab sunt! Laborum at veniam animi eos soluta maiores ratione a?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deserunt vitae quas iure incidunt nostrum labore distinctio nemo! Mollitia, ab sunt! Laborum at veniam animi eos soluta maiores ratione a?</p>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos nemo tenetur suscipit in doloribus praesentium sunt, voluptatem molestias dolorum odio. Maiores qui doloremque maxime laboriosam commodi ipsa molestiae corporis?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos nemo tenetur suscipit in doloribus praesentium sunt, voluptatem molestias dolorum odio. Maiores qui doloremque maxime laboriosam commodi ipsa molestiae corporis?</p>
 
-            </article>
-        </main>   
+        </article>
+    </main>
+    <script>
+        function clickMenu () {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }           
+    </script>   
 </body>
 </html>
